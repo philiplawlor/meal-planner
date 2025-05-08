@@ -1,5 +1,5 @@
 from database_client import mongodb_client
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import random
 
 def create_sample_data():
@@ -32,8 +32,8 @@ def create_sample_data():
             "difficulty": "medium",
             "cuisine": "Italian",
             "dietary_info": ["gluten_free"],
-            "created_at": datetime.now(datetime.UTC),
-            "updated_at": datetime.now(datetime.UTC)
+            "created_at": datetime.now(timezone.utc),
+            "updated_at": datetime.now(timezone.utc)
         },
         {
             "name": "Chicken Stir Fry",
@@ -57,11 +57,11 @@ def create_sample_data():
             "difficulty": "easy",
             "cuisine": "Asian",
             "dietary_info": [],
-            "created_at": datetime.now(datetime.UTC),
-            "updated_at": datetime.now(datetime.UTC)
+            "created_at": datetime.now(timezone.utc),
+            "updated_at": datetime.now(timezone.utc)
         },
         {
-            "name": "Veggie Burger",
+            "name": "Veggie Burger from sample_data.py",
             "description": "Delicious vegetarian burger with quinoa and black beans",
             "ingredients": [
                 {"name": "quinoa", "amount": 200.0, "unit": "g"},
@@ -82,8 +82,8 @@ def create_sample_data():
             "difficulty": "easy",
             "cuisine": "American",
             "dietary_info": ["vegetarian", "vegan"],
-            "created_at": datetime.now(datetime.UTC),
-            "updated_at": datetime.now(datetime.UTC)
+            "created_at": datetime.now(timezone.utc),
+            "updated_at": datetime.now(timezone.utc)
         }
     ]
 
@@ -94,7 +94,7 @@ def create_sample_data():
         meal_ids.append(result.inserted_id)
 
     # Create sample meal plan
-    current_date = datetime.now(datetime.UTC)
+    current_date = datetime.now(timezone.utc)
     sample_meal_plan = {
         "user_id": "user123",
         "week_start": current_date,
@@ -118,8 +118,8 @@ def create_sample_data():
                 "notes": "Healthy lunch choice"
             }
         ],
-        "created_at": datetime.now(datetime.UTC),
-        "updated_at": datetime.now(datetime.UTC)
+        "created_at": datetime.now(timezone.utc),
+        "updated_at": datetime.now(timezone.utc)
     }
 
     # Insert sample meal plan
@@ -133,7 +133,7 @@ def create_sample_data():
             "rating_type": "overall",
             "score": 5,
             "comment": "Absolutely delicious!",
-            "created_at": datetime.now(datetime.UTC)
+            "created_at": datetime.now(timezone.utc)
         },
         {
             "user_id": "user123",
@@ -141,7 +141,7 @@ def create_sample_data():
             "rating_type": "taste",
             "score": 4,
             "comment": "Very tasty, could use more sauce.",
-            "created_at": datetime.now(datetime.UTC)
+            "created_at": datetime.now(timezone.utc)
         }
     ]
 

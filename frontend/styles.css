@@ -1,0 +1,60 @@
+.card {
+    margin-bottom: 20px;
+}
+
+.meal-item {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.meal-item:hover {
+    background-color: #f8f9fa;
+}
+
+.meal-item.active {
+    background-color: #e9ecef;
+}
+
+.meal-details {
+    margin-top: 20px;
+}
+
+.meal-plan-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.meal-plan-item:hover {
+    background-color: #e9ecef;
+}
+
+.meal-plan-actions {
+    margin-top: 10px;
+}
+
+.rating {
+    color: #ffd700;
+}
+
+.difficulty-badge {
+    font-size: 0.8em;
+    padding: 2px 6px;
+    border-radius: 12px;
+}
+
+.difficulty-easy {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.difficulty-medium {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.difficulty-hard {
+    background-color: #f8d7da;
+    color: #721c24;
+}

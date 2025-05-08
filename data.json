@@ -1,0 +1,42 @@
+{
+    "meals": [
+        {
+            "name": "Spaghetti Carbonara from data.json",
+            "description": "Classic Italian pasta dish with creamy sauce",
+            "cuisine": "Italian",
+            "difficulty": "medium",
+            "dietary_info": ["gluten-free", "dairy-free"],
+            "ingredients": [
+                {"name": "spaghetti", "amount": 400.0, "unit": "g"},
+                {"name": "pancetta", "amount": 100.0, "unit": "g"},
+                {"name": "eggs", "amount": 4, "unit": ""},
+                {"name": "parmesan", "amount": 100.0, "unit": "g"}
+            ],
+            "instructions": [
+                "Cook spaghetti according to package instructions",
+                "Fry pancetta until crispy",
+                "Beat eggs with parmesan",
+                "Combine all ingredients and serve"
+            ]
+        },
+        {
+            "name": "Chicken Stir Fry",
+            "description": "Quick and healthy stir fry dish",
+            "cuisine": "Chinese",
+            "difficulty": "easy",
+            "dietary_info": ["low-carb"],
+            "ingredients": [
+                {"name": "chicken breast", "amount": 500.0, "unit": "g"},
+                {"name": "broccoli", "amount": 200.0, "unit": "g"},
+                {"name": "soy sauce", "amount": 2, "unit": "tbsp"},
+                {"name": "garlic", "amount": 2, "unit": "cloves"}
+            ],
+            "instructions": [
+                "Cut chicken into strips",
+                "Stir fry chicken until cooked",
+                "Add vegetables and soy sauce",
+                "Serve with rice"
+            ]
+        }
+    ]
+}

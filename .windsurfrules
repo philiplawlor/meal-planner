@@ -11,3 +11,5 @@ Strikethrough items from the TODO.md list that are done, include the version num
 Create a new git repo and push changes to the repository when things are working nicely.
 
 My tech stack is python, flask, sqlalchemy, alembic, pytest, flutter, mongodb atlas
+
+Always work in a python virtual environment

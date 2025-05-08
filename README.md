@@ -1,6 +1,6 @@
 # Meal Planner
 
-## Version 1.0.0
+## Version 0.01.00
 
 A meal planning application that allows users to plan their meals for the week. Meal ideas are fetched from MongoDB Atlas and displayed in a Flutter app.
 

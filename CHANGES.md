@@ -1,8 +1,9 @@
 # Changelog
 
-## Version 1.0.0
+## Version 0.01.00
 
-- Initial project setup
-- Database schema design and implementation
-- Sample data creation
-- Basic MCP server structure
+- Initial frontend implementation with meal filtering
+- Basic meal planning functionality
+- Working meal list with filters for cuisine, difficulty, and dietary preferences
+- Simple API server for data serving
+- Basic meal details view
