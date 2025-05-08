@@ -1,5 +1,7 @@
 # Meal Planner
 
+## Version 1.0.0
+
 A meal planning application that allows users to plan their meals for the week. Meal ideas are fetched from MongoDB Atlas and displayed in a Flutter app.
 
 ## Tech Stack
@@ -8,10 +10,6 @@ A meal planning application that allows users to plan their meals for the week. 
 - Database: MongoDB Atlas
 - Frontend: Flutter
 - Protocol: Model Context Protocol (MCP)
-
-## Version
-
-1.0.0
 
 ## Setup
 

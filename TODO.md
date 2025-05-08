@@ -1,6 +1,8 @@
 # To-Do List
 
 ## MVP Features
+- [x] Database schema design and implementation (v1.0.0)
+- [x] Sample data creation (v1.0.0)
 - [ ] Implement MCP server endpoints
 - [ ] Create Flutter UI components
 - [ ] Implement meal fetching from MongoDB
