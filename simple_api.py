@@ -10,8 +10,8 @@ load_dotenv()
 
 # MongoDB connection
 client = MongoClient(os.getenv('MONGODB_URI'))
-db = client['Foods']
-collection = db['meals']
+db = client['Recipes']
+collection = db['recipes']
 
 class SimpleAPIHandler(SimpleHTTPRequestHandler):
     def do_OPTIONS(self):

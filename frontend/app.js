@@ -20,12 +20,28 @@ class MealPlanner {
         document.getElementById('cuisineFilter').addEventListener('change', () => this.loadMeals());
         document.getElementById('difficultyFilter').addEventListener('change', () => this.loadMeals());
         document.getElementById('dietaryFilter').addEventListener('change', () => this.loadMeals());
+        document.getElementById('clearFilters').addEventListener('click', () => this.clearFilters());
+    }
+
+    clearFilters() {
+        // Reset filter values
+        document.getElementById('cuisineFilter').value = '';
+        document.getElementById('difficultyFilter').value = '';
+        document.getElementById('dietaryFilter').value = '';
+        
+        // Reload meals with no filters
+        this.loadMeals();
     }
 
     async loadMeals() {
         try {
             console.log('Loading meals...');
-            const response = await fetch('data.json');
+            const response = await fetch(`${this.apiBaseUrl}/meals`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
             
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -49,7 +65,12 @@ class MealPlanner {
     async loadFilters() {
         try {
             console.log('Loading filters...');
-            const response = await fetch('data.json');
+            const response = await fetch(`${this.apiBaseUrl}/meals`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
             
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
